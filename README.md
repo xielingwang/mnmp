@@ -4,10 +4,12 @@
 所以自己手动一步步安装, 整理了方便安装的bash脚本, 暂且叫mnmp吧, 实际上也是Mac+nginx+mysql+php, 也许有点标题党, 见谅见谅~ 不过总体上能为准备装mnmp的同学省掉不少弯路, 因为我参考一些文章安装时也碰到几个问题卡住了.
 
 # 目标环境
+```
 mac osx 10.9.2
 nginx 1.6
 mariadb 10.0
 php 5.5
+```
 
 # 安装:
 把: https://github.com/kairyou/mac-bash-scripts的脚本下载下来.
