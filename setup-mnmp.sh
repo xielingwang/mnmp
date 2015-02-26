@@ -16,14 +16,16 @@ sudo mkdir /var/lib/nginx
 mkdir /usr/local/etc/nginx/vhost/
 
 # 2.php
-brew install php55 --with-imap --with-tidy --with-debug --with-pgsql --with-mysql --with-fpm
+# brew install php55 --with-imap --with-tidy --with-debug --with-pgsql --with-mysql --with-fpm
+brew install php55 --with-fpm --with-pgsql --with-tidy 
+
 # brew options php54 # see more options
 brew install php55-mcrypt
 brew install php55-xhprof
 brew install php55-xdebug
 brew install php55-uploadprogress
 
-# echo 'export PATH="$(brew --prefix php54)/bin:$PATH" # php' >> ~/.bash_profile
+export PATH="$(brew --prefix php55)/bin:$PATH" # php' >> ~/.bash_profile
 
 # 
 brew install mariadb --use-llvm --env=std
